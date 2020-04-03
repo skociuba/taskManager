@@ -1,0 +1,35 @@
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("./img/images.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.doneTodo {
+  color: #ff5601;
+  text-decoration: line-through;
+}
+
+.form-group-collection input:focus {
+  border-bottom: 1px solid #ff5601 !important;
+  box-shadow: 0 1px 0 0 #ff5601 !important;
+  color: white;
+}
+
+.sidenav {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-right: 1px solid #ff5601 !important;
+}
+
+tr {
+  border-bottom: 1px solid rgb(255, 255, 255) !important;
+}
