@@ -6,7 +6,7 @@ import {
   RESET_POST,
   TOGGLE_FILTER,
   DONE_TODO
-} from "./taskTypes";
+} from "./taskTypes"
 
 export const addPost = item => ({
   type: ADD_POST,

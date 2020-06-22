@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Provider } from "react-redux";
 import Page from "./page";
-import Redux from "./components/Redux";
+import Main from "./components/Main";
 import Execute from "./components/Execute";
 import Start from "./components/Start";
 import Search from "./components/Search";
@@ -38,12 +38,12 @@ class App extends Component {
       <Fragment>
         {" "}
         <li>
-          <Redirect to="/Redux" exact style={{ color: "white" }}>
+          <Redirect to="/Main" exact style={{ color: "white" }}>
             TASK MANAGER
           </Redirect>
         </li>
         <li>
-          <NavLink to="/Redux" exact style={{ color: "white" }}>
+          <NavLink to="/Main" exact style={{ color: "white" }}>
             TASK MANAGER
           </NavLink>
         </li>
@@ -103,7 +103,7 @@ class App extends Component {
             </ul>
 
             <Route path="/" exact strict component={Start} />
-            <Route path="/Redux" exact strict component={Redux} />
+            <Route path="/Main" exact strict component={Main} />
             <Route path="/Execute" exact strict component={Execute} />
             <Route path="/Search" exact strict component={Search} />
             <Route path="/Shifts" exact strict component={Shifts} />

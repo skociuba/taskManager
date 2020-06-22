@@ -22,7 +22,6 @@ const StyledButton = styled.button`
 `
 const Info = styled.div`
   border: 2px solid white;
-
   color: white;
   min-padding: 10px;
   border-radius: 8px;
@@ -35,7 +34,6 @@ const ReduxEditor = (props) => {
   const [editFieldValue, setEditFieldValue] = useState(props.titleBody || '') // create a local variable for using props in input value https://stackoverflow.com/questions/59721035/usestate-only-update-component-when-values-in-object-change
   const dispatch = useDispatch()
   const changePosts = (body) => dispatch(changePost(body))
-
   const onChange = e => {
     const value = e.target.value
     setTodo(value)

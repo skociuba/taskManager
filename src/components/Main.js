@@ -46,13 +46,12 @@ const Info2 = styled.div`
   border: 2px solid white;
   padding: 30px;
   color: white;
-
   min-padding: 10px;
   border-radius: 8px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 1);
 `
-const Redux = () => {
+const Main = () => {
   const titles = useSelector((state) => state.titles)
 
   const dispatch = useDispatch()
@@ -93,4 +92,4 @@ const Redux = () => {
   )
 }
 
-export default Redux
+export default Main

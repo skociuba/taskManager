@@ -1,15 +1,14 @@
 import React, { Fragment, useState } from 'react'
 import { useSelector } from 'react-redux'
-
 import UserList from './UserList'
 import styled from 'styled-components'
 import '../app.css'
+
 const Input = styled.div`
   height: 200px;
   margin-bottom: 10px;
   border-bottom: 2px solid #ff5601;
 `
-
 const StyledButton = styled.button`
   background-color: #ff5601;
   border: 1px solid black;
@@ -31,7 +30,6 @@ const Container = styled.div`
   text-align: center;
   padding: 10px;
 `
-
 const Search = () => {
   const titles = useSelector((state) => state.titles)
 
@@ -47,7 +45,7 @@ const Search = () => {
   }
   const reset = (e) => {
     e.persist()
-    setUsers(titles) // using e persist insead e preventDefault and  type='reset' defaultValue='Reset' to reser input and filter
+    setUsers(titles) // using e.persist insead e.preventDefault and  type='reset' defaultValue='Reset' to reser input and filter
   }
   return (
     <Fragment>
@@ -61,7 +59,6 @@ const Search = () => {
                 <input
                   type='text'
                   name='body'
-
                   onInput={filterUsers}
                   className='form-control'
                 />

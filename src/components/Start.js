@@ -2,9 +2,9 @@ import React, { Fragment } from 'react'
 import LoginForm from './LoginForm'
 import styled from 'styled-components'
 import { useEffect } from 'react'
+
 const Container = styled.div`
   border-top: 2px solid #ff5601;
-
   text-align: center;
   padding: 10px;
 `
@@ -45,16 +45,15 @@ function Start (props) {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.confirm(`Welcom to my app. It don't have  sign up option. Default email is : skociuba83@onet.pl and password is : basia81 `)
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <Fragment>
       <Container>
         <Info>
           <Item>
             <h4>Be mindfulness.</h4>
-          
             <LoginForm />
           </Item>
         </Info>

@@ -1,17 +1,14 @@
-import React from 'react';
-
-import '../app.css';
-import styled from 'styled-components';
+import React from 'react'
+import '../app.css'
+import styled from 'styled-components'
 
 const Container = styled.div`
   border-top: 2px solid #ff5601;
-
   text-align: center;
   padding: 10px;
   display: grid;
   min-height: 100vh;
-`;
-
+`
 const Info2 = styled.div`
   border: 2px solid white;
   padding: 30px;
@@ -20,13 +17,11 @@ const Info2 = styled.div`
   border-radius: 8px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.9);
-`;
-function Shifts() {
+`
+function Shifts () {
   return (
     <Container>
-      {' '}
       <Info2 className='centered'>
-        {' '}
         <table>
           <thead>
             <tr>
@@ -271,7 +266,7 @@ function Shifts() {
         </table>
       </Info2>
     </Container>
-  );
+  )
 }
 
-export default Shifts;
+export default Shifts

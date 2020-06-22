@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { addPost } from '../actions/taskActions'
-import { resetPost } from '../actions/taskActions'
-import { useDispatch } from 'react-redux'
+import React, {useState} from 'react'
+import {addPost} from '../actions/taskActions'
+import {resetPost} from '../actions/taskActions'
+import {useDispatch} from 'react-redux'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -30,7 +30,6 @@ const ReduxInput = () => {
   const dispatch = useDispatch()
   const addPosts = body => dispatch(addPost(body))
   const onResets = () => dispatch(resetPost())
-
   const onChange = e => {
     setTodo(e.target.value)
   }

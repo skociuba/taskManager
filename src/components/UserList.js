@@ -1,6 +1,7 @@
 import React from 'react'
 import '../app.css'
 import styled from 'styled-components'
+
 const Info2 = styled.div`
   border: 2px solid white;
   padding: 30px;
